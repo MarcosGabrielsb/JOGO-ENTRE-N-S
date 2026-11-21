@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#241b2b">
+  <title>Entre Nós | Nosso cantinho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <span class="eyebrow">UM UNIVERSO SÓ NOSSO</span>
+        <h1>Entre <span>Nós</span> <b>♥</b></h1>
+      </div>
+      <div class="coin-pill">💗 <strong id="coins">0</strong></div>
+    </header>
+
+    <section id="home">
+      <section class="hero">
+        <div class="hero-glow"></div>
+        <span class="hero-tag">✦ NOSSA HISTÓRIA EM JOGOS ✦</span>
+        <h2>Pequenos desafios,<br><em>grandes lembranças.</em></h2>
+        <p>Um lugar para brincar, sorrir e descobrir o quanto vocês se conhecem.</p>
+        <div class="hero-bottom">
+          <span>feito com carinho</span>
+          <strong>♥ ♥ ♥</strong>
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="stat"><span>⭐</span><strong id="points">0</strong><small>PONTOS</small></div>
+        <div class="stat"><span>🎮</span><strong id="played">0</strong><small>PARTIDAS</small></div>
+        <div class="stat"><span>🏆</span><strong id="completed">0</strong><small>JOGOS VENCIDOS</small></div>
+      </section>
+
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">ESCOLHA SEU DESAFIO</span>
+          <h2>Nosso catálogo</h2>
+        </div>
+        <span class="heading-heart">♡</span>
+      </div>
+
+      <section class="games-grid">
+        <button class="game-card c-rose" onclick="openGame('puzzle')">
+          <span class="game-icon">🧩</span><strong>Quebra-cabeça</strong>
+          <small>Organize a mensagem</small><span class="play">JOGAR ↗</span>
+        </button>
+        <button class="game-card c-lilac" onclick="openGame('memory')">
+          <span class="game-icon">🧠</span><strong>Memória do amor</strong>
+          <small>Encontre todos os pares</small><span class="play">JOGAR ↗</span>
+        </button>
+        <button class="game-card c-peach" onclick="openGame('quiz')">
+          <span class="game-icon">💕</span><strong>Quiz do casal</strong>
+          <small>10 perguntas especiais</small><span class="play">JOGAR ↗</span>
+        </button>
+        <button class="game-card c-blue" onclick="openGame('maze')">
+          <span class="game-icon">🗺️</span><strong>Labirinto do amor</strong>
+          <small>Encontre a saída</small><span class="play">JOGAR ↗</span>
+        </button>
+        <button class="game-card c-green" onclick="openGame('words')">
+          <span class="game-icon">✍️</span><strong>Palavras cruzadas</strong>
+          <small>Decifre as pistas</small><span class="play">JOGAR ↗</span>
+        </button>
+        <button class="game-card c-yellow" onclick="openGame('differences')">
+          <span class="game-icon">🔎</span><strong>Encontre a diferença</strong>
+          <small>Olhos bem atentos</small><span class="play">JOGAR ↗</span>
+        </button>
+        <button class="game-card c-pink" onclick="openGame('hangman')">
+          <span class="game-icon">🔤</span><strong>Acerte a palavra</strong>
+          <small>Descubra antes dos erros</small><span class="play">JOGAR ↗</span>
+        </button>
+        <button class="game-card c-violet" onclick="openGame('letters')">
+          <span class="game-icon">💌</span><strong>Cartas secretas</strong>
+          <small>Mensagens para abrir</small><span class="play">ABRIR ↗</span>
+        </button>
+        <button class="game-card c-dark" onclick="openGame('btsMusic')">
+          <span class="game-icon">🎧</span><strong>Desafio musical BTS</strong>
+          <small>Ouça e adivinhe a faixa</small><span class="play">ARMY MODE ↗</span>
+        </button>
+        <button class="game-card c-purple" onclick="openGame('btsQuiz')">
+          <span class="game-icon">💜</span><strong>Universo BTS</strong>
+          <small>Conhece os 7 integrantes?</small><span class="play">ARMY MODE ↗</span>
+        </button>
+      </section>
+
+      <div class="section-heading extra-heading">
+        <div>
+          <span class="eyebrow">UM POUCO MAIS DE NÓS</span>
+          <h2>Experiências especiais</h2>
+        </div>
+        <span class="heading-heart">♡</span>
+      </div>
+
+      <section class="games-grid">
+        <button class="game-card c-violet" onclick="openGame('surprise')">
+          <span class="game-icon">💌</span><strong>Mensagem surpresa</strong>
+          <small>Uma mensagem para o coração</small><span class="play">DESCOBRIR ↗</span>
+        </button>
+        <button class="game-card c-yellow" onclick="openGame('chest')">
+          <span class="game-icon">🎁</span><strong>Baú de surpresas</strong>
+          <small>Desbloqueie pequenos presentes</small><span class="play">ABRIR ↗</span>
+        </button>
+        <button class="game-card c-rose" onclick="openGame('adventure')">
+          <span class="game-icon">🌹</span><strong>Nossa aventura</strong>
+          <small>Escolha os caminhos da história</small><span class="play">COMEÇAR ↗</span>
+        </button>
+        <button class="game-card c-dark" onclick="openGame('vault')">
+          <span class="game-icon">🔐</span><strong>Cofre secreto</strong>
+          <small>Descubra o segredo de quatro letras</small><span class="play">DESVENDAR ↗</span>
+        </button>
+      </section>
+
+      <aside class="love-note">
+        <span>✦</span>
+        <div>
+          <strong>Uma lembrança para guardar</strong>
+          <p>O objetivo não é só vencer. É criar mais uma memória juntos.</p>
+        </div>
+      </aside>
+
+      <div id="resetTrophiesArea" class="reset-area">
+        <button id="resetTrophiesButton" type="button" onclick="resetTrophiesDirect()">🏆 Zerar troféus</button>
+      </div>
+
+      <div id="creatorCredit" class="creator-credit">
+        <div>💗</div>
+        <strong>Criado por Marcos Gabriel</strong><br>
+        <span>Especialmente para Emily ❤️</span>
+      </div>
+    </section>
+
+    <section id="gameScreen" class="game-screen hidden">
+      <button class="back-button" onclick="goHome()">← VOLTAR AO NOSSO CANTINHO</button>
+      <div id="gameContent"></div>
+    </section>
+
+    <footer>
+      ENTRE NÓS <span>♥</span>
+      <small>um jogo, mil lembranças.</small>
+    </footer>
+  </main>
+
+  <div id="toast" class="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
