@@ -1037,7 +1037,7 @@ function showVaultSuccess() {
   renderGame("🔐 O cofre foi aberto!", "Você descobriu o segredo. Agora existe uma mensagem só sua.", `
     <div class="vault-success">
       <div class="big-icon">💖</div>
-      <h3>Para Emilly Rayane Nayara Ferreira</h3>
+      <h3>Para Emilly Rayane Naiva Ferreira</h3>
       <p>
         Você conseguiu encontrar o que estava escondido.
         Talvez quatro letras pareçam pouco, mas elas representam alguém
